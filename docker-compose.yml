@@ -1,0 +1,11 @@
+services:
+  development-environment:
+    container_name: development-environment
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 3000:3000
+    volumes: 
+      # - /path/to/folder:/shared
